@@ -1,79 +1,18 @@
-<!--<div name="body" id="body" class="top-banner">-->
-<!--  <div class="banner-component">-->
-<!--    <img src="../../assets/img/bg.png">-->
-<!--  </div>-->
-<!--</div>-->
-<!--<div name="overseas" class="aboutus" id="overseas">-->
-<!--  <div class="a-component fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s"-->
-<!--    style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">-->
-<!--    <div class="title"></div>-->
-<!--    <div class="content">-->
-<!--      北京筑梦园科技有限公司是美行科技的子公司，于2015年在成立。是一家致力于提供全场景一站式的-->
-<!--      智慧停车解决方案提供商，是“华为严选”、腾讯WeCity、长三角静态交通一体化产业发展中心的生态合-->
-<!--      作伙伴，为城市管理者、停车场运营机构提供城市级停车平台SAAS服务，实现停车服务的全场景覆盖，让-->
-<!--      沈阳成为了国内首个落地城市级智慧停车解决方案的城市、交通部ETC智慧停车平台唯一试点城市。-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-<!--<div name="message" class="information" id="message">-->
-<!--  <div class="a-component fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s"-->
-<!--    style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">-->
-<!--    <div class="title"></div>-->
-<!--    <div class="content">-->
-<!--      <button class="p-left-btn" (click)="carousel.pre()"><i nz-icon class="pre"></i></button>-->
-<!--      <nz-carousel #carousel [nzEffect]="'fade'">-->
-<!--        <div nz-carousel-content *ngFor="let products of array">-->
-<!--          <div class="wrap">-->
-<!--            <div class="sub" *ngFor="let item of products">-->
-<!--              <img class="label1" *ngIf="item.label==='城市项目'"-->
-<!--                src="../../assets/img/城市项目tag.png" alt="">-->
-<!--              <img class="label2" *ngIf="item.label==='停车场项目'"-->
-<!--                src="../../assets/img/停车场项目tag.png" alt="">-->
-<!--              <img src="{{item.img}}" alt="">-->
-<!--              <p class="line-limit-length">{{item.title}}</p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </nz-carousel>-->
-<!--      <button class="p-right-btn" (click)="carousel.next()"><i nz-icon class="next"></i></button>-->
-<!--    </div>-->
-<!--  </div>-->
-
-<!--</div>-->
-<!--<div name="contact" class="contact-us" id="contact">-->
-<!--  <div class="a-component contact-component fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s"-->
-<!--    style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">-->
-<!--    <div class="title"></div>-->
-<!--    <div class="content">-->
-<!--      <ul>-->
-<!--        <li *ngFor="let item of contacts">-->
-<!--          <img src="{{item.img}}">-->
-<!--          <div class="t">{{item.title}}</div>-->
-<!--          <div class="tel">{{item.price}}</div>-->
-<!--        </li>-->
-<!--      </ul>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-<!--<app-footer></app-footer>-->
-
-<!--<nz-modal [(nzVisible)]="isVisible" nzTitle="提示" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">-->
-<!--  <p>注册会员登录后可浏览！会员费10元/月。</p>-->
-<!--</nz-modal>-->
-
-<div>
+<div id="home">
   <div class="home-banner">
-    <div class="top-text">为服务而生&nbsp;&nbsp;携手共进</div>
-    <div class="middle-text">Born for service cooperate with you</div>
-    <div class="bottom-text">
-      以人为本，超值服务，极致体验
-      标准化、流程化、系统化
+    <div class="text-content">
+      <div class="top-text">为服务而生&nbsp;&nbsp;携手共进</div>
+      <div class="middle-text">Born for service cooperate with you</div>
+      <div class="bottom-text">
+        以人为本，超值服务，极致体验
+        标准化、流程化、系统化
+      </div>
     </div>
     <img src="../../assets/img/滑动提示.png">
   </div>
   <div class="company-introduction">
     <div>
-      <img src="../../assets/img/qiye_img.png">
+      <div class="picture"></div>
       <div class="about-us">
         <img src="../../assets/img/about_us.png">
         <div class="introduction">
@@ -84,9 +23,9 @@
     </div>
   </div>
   <div class="project-introduction">
-    <div class="center-box">
-      <img src="../../assets/img/solutions.png">
-      <div class="project-list">
+    <div>
+      <div class="picture"></div>
+      <div class="project-list" style="margin-left:120px">
         <span class="dividing-line"></span>
         <div class="project-box">
           <img src="../../assets/img/停车云平台_icon.png" style="margin: 35px 90px 16px 91px">
@@ -114,7 +53,7 @@
         </div>
         <span class="dividing-line"></span>
       </div>
-      <img src="../../assets/img/car.png" style="position: relative;top: -33px">
+      <img src="../../assets/img/car.png" style="position: relative;top: -33px;left: 120px">
       <div class="more-project-btn">
         <div>more</div>
         <img src="../../assets/img/arrow.png">
@@ -147,26 +86,30 @@
     </div>
   </div>
   <div class="parking-plan">
-    <img src="../../assets/img/全场景智慧停车解决方案.png">
+    <div>
+      <img src="../../assets/img/全场景智慧停车解决方案.png">
+    </div>
+
   </div>
   <div class="partner">
-    <div class="center-box">
+    <div class="content">
       <img src="../../assets/img/合作伙伴.png">
       <div class="partner-list">
         <div>
-          <img src="../../assets/img/文兴.png">
-          <img src="../../assets/img/沈阳国际软件园.png">
-          <img src="../../assets/img/工商银行.png">
-          <img src="../../assets/img/平安.png">
+          <div class="img1"></div>
+          <div class="img2"></div>
+          <div class="img3"></div>
+          <div class="img4"></div>
         </div>
         <div>
-          <img src="../../assets/img/科拓.png">
-          <img src="../../assets/img/捷顺.png">
-          <img src="../../assets/img/道尔.png">
-          <img src="../../assets/img/创通.png">
+          <div class="img5"></div>
+          <div class="img6"></div>
+          <div class="img7"></div>
+          <div class="img8"></div>
         </div>
       </div>
     </div>
 
   </div>
+  <app-footer></app-footer>
 </div>
