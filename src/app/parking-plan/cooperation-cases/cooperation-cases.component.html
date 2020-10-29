@@ -1,0 +1,23 @@
+<div class="cases">
+  <div class="content">
+    <div class="product-list">
+      <div [ngClass]="{'active':index == 0}" (click)="chooseCase($event)">城市案例</div>
+      <div [ngClass]="{'active':index == 1}" (click)="chooseCase($event)">停车场案例</div>
+    </div>
+    <div class="cases-detail">
+      <div class="city-cases" [ngStyle]="{'display':index === 0 ? 'flex' : 'none'}">
+        <img src="../../../assets/img/沈阳智慧停车.png" style="width: 558px;height: 75px;margin: auto">
+        <img src="../../../assets/img/沈阳配图.png" style="width: 1200px;height: 520px;margin-top: 97px">
+        <div class="first-description">项目于2017年启动，规划接入5万个路内泊位、1200多个路外停车场（泊位数量18万+）截止到2020年，路内泊位已
+          接入4.2万个、路外停车场接入247个，泊位共计5.3万个，沈阳智慧停车平台用户数80万。
+        </div>
+        <img src="../../../assets/img/本溪智慧停车.png" style="width: 292px;height: 72px;margin: 125px auto 99px">
+        <img src="../../../assets/img/本溪配图.png">
+        <div class="second-description">本溪智慧停车项目于2019年正式启动，项目总体规模共计1万余个路内泊位、150余个路外停车场 （泊位数量10500个左右），目前已上线3000余个路内泊位。
+        </div>
+      </div>
+      <div class="park-cases" [ngStyle]="{'display':index === 1 ? 'flex' : 'none' }">8888
+      </div>
+    </div>
+  </div>
+</div>

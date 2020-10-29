@@ -1,135 +1,191 @@
-/*footer {*/
-/*    display: flex;*/
-/*    justify-content: space-around;*/
-/*    width: 100%;*/
-/*    text-align: center;*/
-/*    height: 100px;*/
-/*    background-color: #302E3E;*/
-/*    color: #fff;*/
-/*    align-items: center;*/
-/*}*/
-
 
 .footer {
   width: 100%;
   min-width: 1440px;
   height: 420px;
-  background: #151C29;
+  //background: #151C29;
+  //background-size: 1920px 420px;
   display: flex;
   flex-direction: column;
-  //background: url("../../assets/img/矢量智能对象.png") no-repeat;
 
   .footer-top {
     width: 100%;
     height: 363px;
+    display: flex;
+    flex-direction: column;
+    background: #151C29 no-repeat center 0%;
+    background-size: 1920px 363px;
+    max-width: 1920px;
+    margin: auto;
 
-    .content {
-      width: 1440px;
-      height: 100%;
+    .logo {
+      padding-top: 42px;
+      width: 1199px;
       display: flex;
-      flex-direction: row;
-      border: 1px solid lightblue;
+      //justify-content: space-between;
+      flex-direction: column;
+      //border: 1px solid lightblue;
+      margin: auto;
 
-      .company-info {
-        display: flex;
-        flex-direction: column;
-        border: 1px solid green;
+      .company-logo {
+        width: 142px;
+        height: 36px;
+        background: url("../../assets/img/logo2.png") no-repeat;
+      }
 
-        .company-logo {
-          width: 142px;
-          height: 36px;
-          background: url("../../assets/img/logo2.png") no-repeat;
-        }
+      .line {
+        width: 1200px;
+        height: 1px;
+        background: #807D93;
+        margin-top: 36px;
+      }
 
-        .line {
-          width: 1200px;
-          height: 1px;
-          background: #807D93;
-          margin-top: 36px;
-        }
 
-        .phone-name {
-          width: 56px;
-          height: 14px;
-          font-size: 14px;
-          font-family: Alibaba PuHuiTi;
-          font-weight: 400;
-          color: #FFFFFF;
-          line-height: 20px;
-          margin-top: 41px;
-          margin-left: -1px;
-        }
+    }
+
+
+    .company-info {
+      display: flex;
+      flex-direction: column;
+      //border: 1px solid green;
+      //padding-top: 42px;
+
+
+      .phone-name {
+        width: 56px;
+        height: 14px;
+        font-size: 14px;
+        font-family: Alibaba PuHuiTi;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 20px;
+        margin-top: 41px;
+        margin-left: -1px;
+      }
+
+      .phone-number {
+        //width: 221px;
+        height: 22px;
+        font-size: 30px;
+        font-family: Alibaba PuHuiTi;
+        font-weight: 400;
+        color: #F9FF51;
+        line-height: 20px;
+        margin: 15px 0px 41px 2px;
 
       }
+
+
+      .company-email {
+        //border: 1px solid #a30121;
+        height: 22px;
+        margin-bottom: 20px;
+      }
+
+      .company-email > img {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .company-email > span {
+        display: inline-block;
+        width: 275px;
+        height: 18px;
+        font-size: 18px;
+        font-family: Alibaba PuHuiTi;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 20px;
+        //border: 1px solid #a30121;
+        vertical-align: middle;
+        margin-left: 20px;
+      }
+
+      .company-address > img {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .company-address > span {
+        display: inline-block;
+        //width: 343px;
+        height: 18px;
+        font-size: 18px;
+        font-family: Alibaba PuHuiTi;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 20px;
+        vertical-align: middle;
+        margin-left: 19px;
+      }
+
+    }
+
+    .QR-code {
+      //position: absolute;
+      //right: 14px;
+      //top: 0px;
+      width: 120px;
+      height: 120px;
+      background: url("../../assets/img/qrcode.png") no-repeat;
+      margin-top: 64px;
+      //background: url("../../assets/img/矢量智能对象.png") no-repeat;
+
     }
   }
+}
 
-  .footer-bottom {
-    width: 100%;
-    height: 57px;
-    background: #16151C;
-    opacity: 0.8;
-  }
+.content {
+  width: 1199px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  //border: 1px solid lightblue;
+  margin: auto;
+  //padding: 0px 121px 0px 120px;
 
-  .company-email {
-    //border: 1px solid #a30121;
-    height: 22px;
-    //margin-bottom: 20px;
-  }
+}
 
-  .company-email > img {
-    display: inline-block;
-    vertical-align: middle;
-  }
 
-  .company-email > span {
-    display: inline-block;
-    width: 275px;
-    height: 18px;
-    font-size: 18px;
+.footer-bottom {
+  width: 100%;
+  height: 57px;
+  background: #16151C;
+  opacity: 0.8;
+  background-size: 1920px 57px;
+  max-width: 1920px;
+  margin: auto;
+
+
+  .left {
+    width: 143px;
+    height: 14px;
+    font-size: 14px;
     font-family: Alibaba PuHuiTi;
     font-weight: 400;
     color: #FFFFFF;
-    line-height: 20px;
-    //border: 1px solid #a30121;
-    vertical-align: middle;
-    //margin-left: 20px;
+    margin-top: 22px;
+    //line-height: 194px;
+    //line-height: 194px;
+
   }
 
-  .company-address > img {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  .company-address > span {
-    display: inline-block;
-    //width: 343px;
-    height: 18px;
-    font-size: 18px;
+  .right {
+    width: 339px;
+    height: 15px;
+    font-size: 14px;
     font-family: Alibaba PuHuiTi;
     font-weight: 400;
     color: #FFFFFF;
-    line-height: 20px;
-    vertical-align: middle;
-    //margin-left: 19px;
+    margin-top: 20px;
+    //line-height: 194px;
+    //border: 1px solid lightblue;
+    //margin-right: 121px;
   }
 }
 
-.QR-code {
-  //position: absolute;
-  //right: 14px;
-  //top: 0px;
-  width: 120px;
-  height: 120px;
-  background: url("../../assets/img/qrcode.png") no-repeat;
-  //background: url("../../assets/img/矢量智能对象.png") no-repeat;
-
-}
 
 
-.nav-menu {
-  width: 45%;
-  height: 60px;
-  line-height: 60px;
-  float: right;
-}
+
+

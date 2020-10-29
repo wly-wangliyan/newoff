@@ -110,17 +110,8 @@
     }
 
     .more-button {
-      width: 94px;
-      height: 26px;
-      font-size: 24px;
-      font-family: Alibaba PuHuiTi;
-      font-weight: 400;
-      color: #302E3E;
-      line-height: 20px;
-      background: url("../../assets/img/more.png") no-repeat;
       margin-left: 8px;
       margin-top: 46px;
-      cursor: pointer;
     }
   }
 }
@@ -138,7 +129,7 @@
   & > div {
     width: 1440px;
     height: 100%;
-    border: 1px solid blue;
+    //border: 1px solid blue;
     margin: auto;
 
     & > .picture:first-child {
@@ -207,17 +198,124 @@
   background: #FFFFFF;
 
 
+  .content {
+    width: 1440px;
+    height: 810px;
+    margin: 0 auto;
+    padding-top: 90px;
+  }
+
+  .title-picture {
+    margin-left: 448px;
+    background: url("../../assets/img/products.png");
+    width: 549px;
+    height: 75px;
+  }
+
+
   .product-list {
 
     display: flex;
     flex-direction: row;
+    padding-top: 88px;
+    height: 142px;
+    margin-left: 273px;
+    width: 893px;
+    justify-content: space-between;
 
-    div {
+    .active {
       width: 280px;
       height: 60px;
+      line-height: 60px;
+      text-align: center;
       border: 1px solid #C7C7C7;
       border-radius: 30px;
       cursor: pointer;
+      font-size: 22px;
+      font-family: Alibaba PuHuiTi;
+      font-weight: 500;
+      color: #FFFFFF;
+      background: url("../../assets/img/btn_select.png");
+
+    }
+
+    div {
+      border: 1px solid #C7C7C7;
+      border-radius: 30px;
+      cursor: pointer;
+      line-height: 60px;
+      text-align: center;
+      width: 280px;
+      height: 60px;
+      font-size: 22px;
+      font-family: Alibaba PuHuiTi;
+      font-weight: 500;
+      color: #302E3E;
+    }
+  }
+
+
+  .product-detail {
+
+    .wire-free-camera > .product-picture {
+      background: url("../../assets/img/设备.png") no-repeat;
+    }
+
+    .luya-camera > .product-picture {
+      background: url("../../assets/img/路牙相机.png") no-repeat;
+    }
+
+    .video-post > .product-picture {
+      background: url("../../assets/img/视频桩.png") no-repeat;
+    }
+
+
+    & > div {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .product-picture {
+
+      width: 382px;
+      height: 382px;
+      //border: 1px solid black;
+      margin-left: 120px;
+      margin-right: 67px;
+    }
+
+    .product-introduce {
+      width: 1058px;
+      height: 100%;
+
+      .product-name {
+        width: 160px;
+        height: 30px;
+        margin-top: 64px;
+        font-size: 32px;
+        font-family: Alibaba PuHuiTi;
+        font-weight: 500;
+        color: #302E3E;
+      }
+
+      .red-line {
+        width: 71px;
+        height: 6px;
+        background: #E11D25;
+      }
+
+      .description-text {
+        width: 744px;
+        height: 138px;
+        margin: 49px 0px 33px 1px;
+        font-size: 18px;
+        font-family: Alibaba PuHuiTi;
+        font-weight: 400;
+        color: #302E3E;
+        line-height: 30px;
+      }
+
+
     }
   }
 
@@ -282,67 +380,82 @@
       flex-wrap: wrap;
       align-content: space-between;
 
-      .img1{
+      .img1 {
         width: 240px;
         height: 50px;
         background: url("../../assets/img/文兴.png") no-repeat;
-        &:hover{
+
+        &:hover {
           background: url("../../assets/img/文兴_active.png") no-repeat;
         }
       }
-      .img2{
+
+      .img2 {
         width: 240px;
         height: 50px;
         background: url("../../assets/img/沈阳国际软件园.png");
-        &:hover{
+
+        &:hover {
           background: url("../../assets/img/沈阳国际软件园_active.png") no-repeat;
         }
       }
-      .img3{
+
+      .img3 {
         width: 240px;
         height: 50px;
         background: url("../../assets/img/工商银行.png");
-        &:hover{
+
+        &:hover {
           background: url("../../assets/img/工商银行_active.png") no-repeat;
         }
       }
-      .img4{
+
+      .img4 {
         width: 240px;
         height: 50px;
         background: url("../../assets/img/平安.png");
-        &:hover{
+
+        &:hover {
           background: url("../../assets/img/平安_active.png") no-repeat;
         }
       }
-      .img5{
+
+      .img5 {
         width: 240px;
         height: 50px;
         background: url("../../assets/img/科拓.png") no-repeat;
-        &:hover{
+
+        &:hover {
           background: url("../../assets/img/科拓_active.png") no-repeat;
         }
       }
-      .img6{
+
+      .img6 {
         width: 240px;
         height: 50px;
         background: url("../../assets/img/捷顺.png") no-repeat;
-        &:hover{
+
+        &:hover {
           background: url("../../assets/img/捷顺_active.png") no-repeat;
         }
       }
-      .img7{
+
+      .img7 {
         width: 240px;
         height: 50px;
         background: url("../../assets/img/道尔.png") no-repeat;
-        &:hover{
+
+        &:hover {
           background: url("../../assets/img/道尔_active.png") no-repeat;
         }
       }
-      .img8{
+
+      .img8 {
         width: 240px;
         height: 50px;
         background: url("../../assets/img/创通.png") no-repeat;
-        &:hover{
+
+        &:hover {
           background: url("../../assets/img/创通_active.png") no-repeat;
         }
       }
